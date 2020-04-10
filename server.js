@@ -22,10 +22,10 @@ app.use(express.json());
 
 // Import routes and give the server access to them.
 
-//var apiroutes = require("./routes/api.js");
+var apiroutes = require("./routes/api.js");
 var htmlroutes = require("./routes/html.js");
 
-//app.use(apiroutes);
+app.use(apiroutes);
 app.use(htmlroutes);
 
 // Start our server so that it can begin listening to client requests.
